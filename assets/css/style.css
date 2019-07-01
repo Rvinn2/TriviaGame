@@ -1,0 +1,11 @@
+body{
+    background-color: pink;
+
+}
+.grid{
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    padding: 10px 50px 50px 50px;
+}

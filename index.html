@@ -13,68 +13,29 @@
         <script src="assets/javascript/app.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div class="grid">
+            <div id="quiz">
+                <h1>Quiz</h1>
+                <hr style="margin: 20px">
 
-        <h1>TRIVIA QUIZZZZZZ</h1>
+                <p id="question"></p>
 
-        <form id="trivia">
-        
-            <form id="question1">
-                 <p>Where was The Fresh Prince originally from?</p>
-                 <input type="radio" name="selection" value="Philadelphia" checked> Philadelphia<br>
-                 <input type="radio" name="selection" value="Atlanta" checked> Atlanta<br>
-                 <input type="radio" name="selection" value="New York" checked> New York<br>
-
-            </form>
-
-            <form id="question2">
-                    <p>Who suggested Will move?</p>
-                    <input type="radio" name="selection" value="His Grandparents" checked> His Grandparents<br>
-                    <input type="radio" name="selection" value="His Mother" checked> His Mother<br>
-                    <input type="radio" name="selection" value="Father" checked> His Father<br>
-
-               </form>
-
-               <form id="question3">
-                    <p>What city did Will move to?</p>
-                    <input type="radio" name="selection" value="San-Francisco" checked> San-Francisco<br>
-                    <input type="radio" name="selection" value="San-Diego" checked> San-Diego<br>
-                    <input type="radio" name="selection" value="Bel-Air" checked> Bel-Air<br>
-
-               </form>   
-
-               <form id="question4">
-                    <p>What was the name of Will's best friend?</p>
-                    <input type="radio" name="selection" value="Rick" checked> Rick<br>
-                    <input type="radio" name="selection" value="James" checked> James<br>
-                    <input type="radio" name="selection" value="Jazz" checked> Jazz<br>
-
-               </form>   
-
-               <form id="question5">
-                    <p>Will had to share living space with which family member?</p>
-                    <input type="radio" name="selection" value="Cousin Carlton" checked> Cousin Carlton<br>
-                    <input type="radio" name="selection" value="Cousin Ashley" checked> Cousin Ashley<br>
-                    <input type="radio" name="selection" value="Butler Jeffrey" checked> Butler Jeffrey<br>
-
-               </form>  
-               <br>
-               <br>
-               <br>
-
-
-
-
-               <input type="submit" value="Complete" onclick="check();">
-        </form>
-
-                <div id="afterSubmit">
-                     <p id="numberCorrect"></p>
+                <div class="buttons">
+                    <button id="btn0"><span id="choice0"></span></button>
+                    <button id="btn1"><span id="choice1"></span></button>
+                    <button id="btn2"><span id="choice2"></span></button>
+                    <button id="btn3"><span id="choice3"></span></button>
+                    <button id="btn4"><span id="choice4"></span></button>
+                    <button id="btn5"><span id="choice5"></span></button>
                 </div>
-                    
+                <hr style="margin: 50px">
+                <footer>
+                    <p id="progres"> Question x of y </p>
+                </footer>
+            </div>
+        </div>
 
-        <script> type="text/javascript"</script>
+       
+
     </body>
 </html>

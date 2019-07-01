@@ -18,7 +18,7 @@
 // }
 
 function check(){
-    alert("FINISHED");
+    // alert("FINISHED");
 
 
             var question1 = document.trivia.question1.value;
@@ -45,7 +45,7 @@ function check(){
             }
 
 
-    document.getElementById("afterSubmit").style.visibility = "visible";
+    // document.getElementById("afterSubmit").style.visibility = "visible";
     document.getElementById("numberCorrect").innerHTML = "You Got " + correct + "Correct!";
 
 }
