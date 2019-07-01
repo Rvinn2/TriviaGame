@@ -18,3 +18,6 @@
 // }
 
 
+function check(){
+    alert("FINISHED");
+}
