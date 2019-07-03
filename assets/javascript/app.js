@@ -1,32 +1,41 @@
-// // create mulitple choice questions(should be an array)
-// // record score.
 
+                                        
+                                        
+    //  TIMER JS                                   
+                                        var counter = 0;
+                                        var timeRemain = 60
+                                        
+                                        function setup() {
+                                            noCanvas();
 
-// var questions = [why did the chicken cross the road?];
+                                            var timer = select("#timer");
+                                            timer.html(timeRemain - counter);
 
-// var score = 0;
+                                            function timeIt() {
+                                                counter++;
+                                                timer.html(counter);
 
-// for(var i=0; i< questions.length; i++){
-//     var response = window.prompt(questions[i].prompt)
-//     if(response == questions[i].answer){
-//         score++;
-//         alert("correct")
-//     }
-//     else{
-//         alert("WRONG");
-//     }
-// }
+                                            }
 
-function check(){
-    // alert("FINISHED");
+                                            setInterval(timeIt, 1000);
+    }
+    
 
-
-            var question1 = document.trivia.question1.value;
-            var question2 = document.trivia.question2.value;
-            var question3 = document.trivia.question3.value;
-            var question4 = document.trivia.question4.value;
-            var question5 = document.trivia.question5.value;
+    // unable to get the check function to work
+        
+    
+    function check(){
+            
+ 
+            var question1 = value;
+            
+            var question2 = value;
+            var question3 = value;
+            var question4 = value;
+            var question5 = value;
             var correct = 0;
+
+
 
             if (question1 == "Philadelphia"){
                 correct++;
@@ -45,9 +54,11 @@ function check(){
             }
 
 
-    // document.getElementById("afterSubmit").style.visibility = "visible";
-    document.getElementById("numberCorrect").innerHTML = "You Got " + correct + "Correct!";
+                
+            document.getElementById("afterSubmit").style.visibility = "visible";
+            
+            document.getElementById("numberCorrect").innerHTML = "You Got " + correct + "Correct!";
 
-}
+        }
 
 

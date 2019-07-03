@@ -15,23 +15,75 @@
     <body>
         <div class="grid">
             <div id="quiz">
-                <h1>Quiz</h1>
+                <h1>Fresh Prince Quiz</h1>
+                
+              <p id="timer">1:00</p>
+                
                 <hr style="margin: 20px">
+        <form>
+                    <Form>
+                        <p id="question1">Where was The Fresh Prince originally from?</p>
+                    <label for="">  <input type="radio" name="selection" value="Philadelphia" checked> Philadelphia<br> </label>
+                    <label for="">    <input type="radio" name="selection" value="Atlanta" checked> Atlanta<br> </label>
+                    <label for="">     <input type="radio" name="selection" value="New York" checked> New York<br> </label>
+                    </Form>
+       
+                  
+       
+                    <Form>
+                           <p id="question2">Who suggested Will move?</p>
+                           <label for="">    <input type="radio" name="selection" value="His Grandparents" checked> His Grandparents<br> </label>
+                            <label for="">   <input type="radio" name="selection" value="His Mother" checked> His Mother<br> </label>
+                            <label for="">   <input type="radio" name="selection" value="Father" checked> His Father<br> </label>
+                    </Form>    
+                      
+       
+                     <Form>
+                           <p id="question3">What city did Will move to?</p>
+                           <input type="radio" name="selection" value="San-Francisco" checked> San-Francisco<br>
+                           <input type="radio" name="selection" value="San-Diego" checked> San-Diego<br>
+                           <input type="radio" name="selection" value="Bel-Air" checked> Bel-Air<br>
+                    </form>
+                        
+       
+                     <Form>
+                           <p id="question4">What was the name of Will's best friend?</p>
+                           <input type="radio" name="selection" value="Rick" checked> Rick<br>
+                           <input type="radio" name="selection" value="James" checked> James<br>
+                           <input type="radio" name="selection" value="Jazz" checked> Jazz<br>
+                    </form>
 
-                <p id="question"></p>
+                       
+       
+                     <Form>
+                           <p id="question5">Will had to share living space with which family member?</p>
+                           <input type="radio" name="selection" value="Cousin Carlton" checked> Cousin Carlton<br>
+                           <input type="radio" name="selection" value="Cousin Ashley" checked> Cousin Ashley<br>
+                           <input type="radio" name="selection" value="Butler Jeffrey" checked> Butler Jeffrey<br>
+                    </form>
+                           <hr style="margin: 50px">
+                           <br>
+        
+                           <footer>
+                                <input id="button" type="button" value="Submit Answers" onclick="check();">
+                                    
+                                    <div id="afterSubmit">
+                                        
+                                        <p id="numberCorrect"></p>
+                                    
+                                    </div>
 
-                <div class="buttons">
-                    <button id="btn0"><span id="choice0"></span></button>
-                    <button id="btn1"><span id="choice1"></span></button>
-                    <button id="btn2"><span id="choice2"></span></button>
-                    <button id="btn3"><span id="choice3"></span></button>
-                    <button id="btn4"><span id="choice4"></span></button>
-                    <button id="btn5"><span id="choice5"></span></button>
-                </div>
-                <hr style="margin: 50px">
-                <footer>
-                    <p id="progres"> Question x of y </p>
-                </footer>
+                                    <br>
+                                    <br>
+                            </footer>
+        
+
+
+       </form>       
+
+              
+                
+              
             </div>
         </div>
 
